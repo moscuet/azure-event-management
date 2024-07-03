@@ -90,7 +90,7 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.Configure<HttpsRedirectionOptions>(options =>
 {
     options.RedirectStatusCode = StatusCodes.Status307TemporaryRedirect;
-    options.HttpsPort = 7202;  
+    // options.HttpsPort = 7202;  
 });
 
 var app = builder.Build();
